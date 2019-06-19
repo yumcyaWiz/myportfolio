@@ -2,17 +2,23 @@
   <v-container fluid>
     <v-parallax :src="require('../assets/shinkan2.png')">
       <v-layout align-center column justify-center>
-        <h1 class="display-2 font-weight-thin mb-3">yumcyawiz</h1>
-        <h4 class="subheading">a raytracing guy</h4>
+        <h1 class="display-3 font-weight-thin mb-3 black--text">yumcyawiz</h1>
+        <h4 class="subheading black--text">a raytracing guy</h4>
       </v-layout>
     </v-parallax>
 
-    <v-container>
-      <h2>I am interested in ...</h2>
-      <v-flex v-for="card in cards" :key="card.title">
-        <Card :title="card.title" :desc="card.desc" />
-      </v-flex>
-    </v-container>
+    <v-card flat>
+      <v-card-title>
+        <h2 class="diaplay-3 font-weight-light">I am interested in ...</h2>
+      </v-card-title>
+        <v-container xs12 sm6 fluid>
+          <v-layout row wrap>
+            <v-flex xs4 v-for="card in cards" :key="card.title">
+              <Card :title="card.title" :desc="card.desc" />
+            </v-flex>
+          </v-layout>
+      </v-container>
+    </v-card>
   </v-container>
 </template>
 
