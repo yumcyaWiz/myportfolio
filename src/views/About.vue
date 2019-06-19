@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1>This is an about page</h1>
+    <h1>About</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque dolor sit amet efficitur venenatis. In luctus id risus in cursus. Donec semper enim diam, non lobortis ex finibus et. Duis sit amet vehicula ex. Curabitur cursus malesuada lacus, fermentum mattis velit condimentum eget. Cras egestas turpis at ullamcorper consectetur. Fusce ultrices malesuada massa, quis laoreet nisi.
 
 Suspendisse felis nulla, ullamcorper at euismod eu, euismod ut justo. Integer a augue id dolor pulvinar placerat. Nullam molestie magna tortor, a aliquet metus suscipit nec. Morbi ac risus sapien. Nam risus eros, vulputate nec odio maximus, accumsan posuere orci. Donec posuere convallis pretium. Integer ut velit tempus, porttitor est id, auctor odio. Donec viverra euismod tellus. Fusce ut neque vel arcu consequat interdum mollis at dolor. Mauris ut lectus sit amet lectus molestie molestie bibendum et turpis.
