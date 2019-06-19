@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar flat app>
+    <v-toolbar app>
       <v-toolbar-title>yumcyawiz's portfolio</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items v-for="view in views" :key="view.title">
