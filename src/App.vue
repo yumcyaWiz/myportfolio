@@ -11,7 +11,9 @@
     </v-content>
 
     <v-footer app>
-      <v-flex text-xs-center> &copy; 2019 - yumcyawiz</v-flex>
+      <v-flex text-xs-center>
+        <h4 class="font-weight-light">&copy; 2019 - yumcyawiz</h4>
+      </v-flex>
     </v-footer>
   </v-app>
 </template>

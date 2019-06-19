@@ -2,8 +2,8 @@
   <v-container fluid>
     <v-parallax :src="require('../assets/parallax.png')">
       <v-layout align-center column justify-center>
-        <h1 class="display-3 font-weight-thin mb-3">yumcyawiz</h1>
-        <h4 class="subheading font-weight-light">sample and integrate</h4>
+        <h1 class="display-3 font-weight-thin mb-3">Mathematics × Programming</h1>
+        <h4 class="subheading font-weight-light">good balance of theory and implementation</h4>
       </v-layout>
     </v-parallax>
 

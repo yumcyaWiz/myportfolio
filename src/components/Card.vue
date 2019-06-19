@@ -4,8 +4,8 @@
       <v-card>
         <v-card-title primary-title>
           <div>
-            <h3 class="heading mb-0">{{title}}</h3>
-            <div>{{desc}}</div>
+            <h3 class="title mb-4 font-weight-light">{{title}}</h3>
+            <p class="font-weight-light">{{desc}}</p>
           </div>
         </v-card-title>
       </v-card>

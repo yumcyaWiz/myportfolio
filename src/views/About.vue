@@ -1,7 +1,5 @@
 <template>
   <v-container fluid>
-    <h1 class="display-1 font-weight-light">About</h1>
-
     <v-layout align-center justify-center column>
       <v-avatar size=200><v-img :src="require('../assets/avatar.jpg')" /></v-avatar>
       <h3 class="display-3 font-weight-light">yumcyawiz</h3>
