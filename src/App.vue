@@ -1,36 +1,12 @@
 <template>
   <v-app>
-    <v-content>
-      <v-navigation-drawer permanent floating> 
-        <v-toolbar flat>
-          <v-list>
-            <v-list-tile>
-              <v-list-tile-title class="title">
-                yumcyawiz's portfolio
-              </v-list-tile-title>
-            </v-list-tile>
-          </v-list>
-        </v-toolbar>
-
-        <v-divider></v-divider>
-
-        <v-list dense class="pt-0">
-          <v-list-tile
-            v-for="view in views"
-            :key="view.title"
-            :to="{path: view.path}"
-          >
-            <v-list-tile-action>
-              <v-icon>{{ view.icon }}</v-icon>
-            </v-list-tile-action>
-
-            <v-list-tile-content>
-              <v-list-tile-title>{{ view.title }}</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
-        </v-list>
-      </v-navigation-drawer>
-    </v-content>
+    <v-toolbar flat app>
+      <v-toolbar-title>yumcyawiz's portfolio</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items v-for="view in views" :key="view.title">
+        <v-btn flat :to="view.path">{{view.title}}</v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
 
     <v-content>
       <v-container fluid>
