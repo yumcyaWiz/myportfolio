@@ -1,12 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar app>
-      <v-toolbar-title>yumcyawiz's portfolio</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items v-for="view in views" :key="view.title">
-        <v-btn flat :to="view.path">{{view.title}}</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
+    <Header :views="views" />
 
     <v-content>
       <v-container fluid>
@@ -23,9 +17,12 @@
 </template>
 
 <script>
+import Header from './components/Header.vue'
+
 export default {
   name: 'App',
   components: {
+    Header
   },
   data () {
     return {
