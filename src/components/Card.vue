@@ -1,6 +1,6 @@
 <template>
-    <v-card flat>
-      <v-img :src="require('@/assets/cards/' + image)" />
+    <v-card class="ma-4">
+      <v-img :src="require('@/assets/cards/' + image)" v-if="image" max-height=200 class="mb-1"/>
 
       <v-card-title>
         <h3 class="title font-weight-light">{{title}}</h3>

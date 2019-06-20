@@ -17,7 +17,7 @@
           <h2 class="diaplay-3 font-weight-light">I am interested in ...</h2>
         </v-card-title>
 
-        <v-container xs12 fluid>
+        <v-container xs12>
           <v-layout row justify-center wrap>
             <v-flex xs6 v-for="card in cards" :key="card.title">
               <Card :title="card.title" :desc="card.desc" :image="card.image" />
@@ -48,7 +48,7 @@ export default {
         {
           title: 'Programming',
           desc: 'I like doing programming and making a cool stuff with it. Personally I like to use programming on some mathematical projects such as numerical analysis, machine learning, simulation.',
-          image: 'programming.png'
+          image: 'programming.jpg'
         },
         { title: 'RayTracing',
           desc: 'RayTracing is a method to generate photorealistic CGs. I am especially interested in Montecarlo RayTracing algorithms such as Path Tracing, Bidirectional Path Tracing, Metropolis Light Transport.',
