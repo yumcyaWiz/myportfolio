@@ -12,7 +12,7 @@
           </v-container>
         </v-content>
 
-        <v-footer app>
+        <v-footer app dark absolute>
           <v-flex text-xs-center>
             <h4 class="font-weight-light">&copy; 2019 - yumcyawiz</h4>
           </v-flex>
