@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <div>
     <v-layout>
       <v-flex>
       <v-parallax :src="require('../assets/parallax.png')">
@@ -11,20 +11,22 @@
       </v-flex>
     </v-layout>
 
-    <v-card flat>
-      <v-card-title>
-        <h2 class="diaplay-3 font-weight-light">I am interested in ...</h2>
-      </v-card-title>
+    <v-container fluid>
+      <v-card flat>
+        <v-card-title>
+          <h2 class="diaplay-3 font-weight-light">I am interested in ...</h2>
+        </v-card-title>
 
-      <v-container xs12 fluid>
-        <v-layout row justify-center wrap>
-          <v-flex xs6 v-for="card in cards" :key="card.title">
-            <Card :title="card.title" :desc="card.desc" />
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-card>
-  </v-container>
+        <v-container xs12 fluid>
+          <v-layout row justify-center wrap>
+            <v-flex xs6 v-for="card in cards" :key="card.title">
+              <Card :title="card.title" :desc="card.desc" />
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-card>
+    </v-container>
+  </div>
 </template>
 
 

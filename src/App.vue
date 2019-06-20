@@ -5,11 +5,9 @@
         <Header :views="views" />
 
         <v-content>
-          <v-container fluid>
-            <v-fade-transition mode="out-in">
-              <router-view></router-view>
-            </v-fade-transition>
-          </v-container>
+          <v-fade-transition mode="out-in">
+            <router-view></router-view>
+          </v-fade-transition>
         </v-content>
 
         <v-footer app dark absolute>
