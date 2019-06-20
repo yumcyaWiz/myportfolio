@@ -33,6 +33,7 @@ export default {
       views: [
         { title: 'Home', icon: 'dashboard', path: '/', external: false },
         { title: 'About', icon: 'account_circle', path: '/about', external: false },
+        { title: 'Gallery', icon: '', path: '/gallery', external: false },
         { title: 'Blog', icon: '', path: 'https://teastat.blogspot.com/', external: true },
         { title: 'Twitter', icon: '', path: 'https://twitter.com/yumcyawiz', external: true },
         { title: 'Github', icon: '', path: 'https://github.com/yumcyaWiz', external: true },
