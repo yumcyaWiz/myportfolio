@@ -6,7 +6,8 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items v-for="view in views" :key="view.title">
-      <v-btn flat :to="view.path">{{view.title}}</v-btn>
+      <v-btn flat :href="view.path" v-if="view.external">{{view.title}}</v-btn>
+      <v-btn flat :to="view.path" v-else>{{view.title}}</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>
