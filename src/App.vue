@@ -1,20 +1,24 @@
 <template>
   <v-app>
-    <Header :views="views" />
+    <v-layout>
+      <v-flex>
+        <Header :views="views" />
 
-    <v-content>
-      <v-container fluid>
-        <v-fade-transition mode="out-in">
-          <router-view></router-view>
-        </v-fade-transition>
-      </v-container>
-    </v-content>
+        <v-content>
+          <v-container fluid>
+            <v-fade-transition mode="out-in">
+              <router-view></router-view>
+            </v-fade-transition>
+          </v-container>
+        </v-content>
 
-    <v-footer app>
-      <v-flex text-xs-center>
-        <h4 class="font-weight-light">&copy; 2019 - yumcyawiz</h4>
+        <v-footer app>
+          <v-flex text-xs-center>
+            <h4 class="font-weight-light">&copy; 2019 - yumcyawiz</h4>
+          </v-flex>
+        </v-footer>
       </v-flex>
-    </v-footer>
+    </v-layout>
   </v-app>
 </template>
 

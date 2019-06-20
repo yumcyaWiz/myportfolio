@@ -1,22 +1,27 @@
 <template>
   <v-container fluid>
-    <v-parallax :src="require('../assets/parallax.png')">
-      <v-layout align-center column justify-center>
-        <h1 class="display-3 font-weight-thin mb-3">Mathematics × Programming</h1>
-        <h4 class="subheading font-weight-light">good balance of theory and implementation</h4>
-      </v-layout>
-    </v-parallax>
+    <v-layout>
+      <v-flex>
+      <v-parallax :src="require('../assets/parallax.png')">
+        <v-layout align-center column justify-center>
+          <h1 class="display-3 font-weight-thin mb-3">Mathematics × Programming</h1>
+          <h4 class="subheading font-weight-light">good balance of theory and implementation</h4>
+        </v-layout>
+      </v-parallax>
+      </v-flex>
+    </v-layout>
 
     <v-card flat>
       <v-card-title>
         <h2 class="diaplay-3 font-weight-light">I am interested in ...</h2>
       </v-card-title>
-        <v-container xs12 sm6 fluid>
-          <v-layout row wrap>
-            <v-flex xs4 v-for="card in cards" :key="card.title">
-              <Card :title="card.title" :desc="card.desc" />
-            </v-flex>
-          </v-layout>
+
+      <v-container xs12 fluid>
+        <v-layout row wrap>
+          <v-flex xs6 v-for="card in cards" :key="card.title">
+            <Card :title="card.title" :desc="card.desc" />
+          </v-flex>
+        </v-layout>
       </v-container>
     </v-card>
   </v-container>

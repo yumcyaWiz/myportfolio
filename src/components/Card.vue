@@ -1,12 +1,12 @@
 <template>
   <v-layout>
-    <v-flex xs12 offset-sm1>
+    <v-flex xs12>
       <v-card>
         <v-card-title primary-title>
-          <div>
-            <h3 class="title mb-4 font-weight-light">{{title}}</h3>
+          <v-flex>
+            <h3 class="title mb-3 font-weight-light">{{title}}</h3>
             <p class="font-weight-light">{{desc}}</p>
-          </div>
+          </v-flex>
         </v-card-title>
       </v-card>
     </v-flex>
