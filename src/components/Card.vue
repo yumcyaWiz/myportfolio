@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex xs12>
-      <v-card>
+      <v-card flat>
         <v-card-title primary-title>
           <v-flex>
             <h3 class="title mb-3 font-weight-light">{{title}}</h3>

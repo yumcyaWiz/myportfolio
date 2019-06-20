@@ -17,7 +17,7 @@
       </v-card-title>
 
       <v-container xs12 fluid>
-        <v-layout row wrap>
+        <v-layout row justify-center wrap>
           <v-flex xs6 v-for="card in cards" :key="card.title">
             <Card :title="card.title" :desc="card.desc" />
           </v-flex>
