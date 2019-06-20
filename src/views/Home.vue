@@ -20,7 +20,7 @@
         <v-container xs12 fluid>
           <v-layout row justify-center wrap>
             <v-flex xs6 v-for="card in cards" :key="card.title">
-              <Card :title="card.title" :desc="card.desc" />
+              <Card :title="card.title" :desc="card.desc" :image="card.image" />
             </v-flex>
           </v-layout>
         </v-container>
@@ -43,23 +43,26 @@ export default {
       cards: [
         { title: 'Mathematics',
           desc: 'I am interested in various field of Mathematics, such as Statistics, Computational Statistics, Probability, Real Analysis, Functional Analysis, Manifold, Numerical Analysis, Stochastic Differential Equation, Control theory, and Stochastic Control.',
-          image: 'cards/mathematics.png'
+          image: 'mathematics.png'
         },
         {
           title: 'Programming',
-          desc: 'I like doing programming and making a cool stuff with it. Personally I like to use programming on some mathematical projects such as numerical analysis, machine learning, simulation.'
+          desc: 'I like doing programming and making a cool stuff with it. Personally I like to use programming on some mathematical projects such as numerical analysis, machine learning, simulation.',
+          image: 'programming.png'
         },
         { title: 'RayTracing',
           desc: 'RayTracing is a method to generate photorealistic CGs. I am especially interested in Montecarlo RayTracing algorithms such as Path Tracing, Bidirectional Path Tracing, Metropolis Light Transport.',
-          image: 'cards/raytracing.png'
+          image: 'raytracing.png'
         },
         {
           title: 'Mathematical Finance',
           desc: 'I like how probability and stochastic differential equation theories are applied in option pricing.',
+          image: 'mathematical_finance.png'
         },
         {
           title: 'Quantitative Investment',
-          desc: 'Quantitative Investment is a way to compose a financial portfolio with mathematics. I am interested in how to make a low risk portfolio with mathematics.'
+          desc: 'Quantitative Investment is a way to compose a financial portfolio with mathematics. I am interested in how to make a low risk portfolio with mathematics.',
+          image: 'quantitative_investment.png'
         },
       ]
     }

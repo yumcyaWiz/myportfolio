@@ -1,16 +1,14 @@
 <template>
-  <v-layout>
-    <v-flex xs12>
-      <v-card flat>
-        <v-card-title primary-title>
-          <v-flex>
-            <h3 class="title mb-3 font-weight-light">{{title}}</h3>
-            <p class="font-weight-light">{{desc}}</p>
-          </v-flex>
-        </v-card-title>
-      </v-card>
-    </v-flex>
-  </v-layout>
+    <v-card flat>
+      <v-img :src="require('@/assets/cards/' + image)" />
+
+      <v-card-title>
+        <h3 class="title font-weight-light">{{title}}</h3>
+      </v-card-title>
+      <v-card-text>
+        <p class="font-weight-light">{{desc}}</p>
+      </v-card-text>
+    </v-card>
 </template>
 
 
