@@ -32,8 +32,11 @@ export default {
       timelines: [
         { time: '2016/03', title: 'Enrolled in Undergraduate', desc: 'I enrolled in some research university in japan. I choosed to major in Applied Mathematics.' },
         { time: '2016/12', title: 'Joined OSK', desc: 'OSK is a programming club in the university. I met a lot of cool guys there.' },
-        { time: '2017/08', title: 'Joined C92', desc: 'I published a book called Signed Distance Field. It is about introduction of RayMarching with GLSL.' },
-        { time: '2018/12', title: 'Joined C95', desc: 'I published a book called Photorealism. It is about theory and implementation of Path Tracing.' }
+        { time: '2017/08', title: 'Joined C92', desc: 'I published a book called Signed Distance Field. It is about introduction of Ray Marching with GLSL.' },
+        { time: '2018/03', title: 'AI Job', desc: 'I started working on some company as a machine-learning engineer. I made a face recognition system there.'},
+        { time: '2018/09', title: 'Fund Intern', desc: 'I started to intern on some quantitative hedgefund. I researched on making a smart beta of NIKKEI225 stocks.'},
+        { time: '2018/12', title: 'Joined C95', desc: 'I published a book called Photorealism. It is about theory and implementation of Path Tracing.' },
+        { time: '2019/01', title: 'Renderer Job', desc: 'I started working on some company as a graphics-programmer.' },
       ]
     }
   }
