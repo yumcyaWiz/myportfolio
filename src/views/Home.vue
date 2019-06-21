@@ -42,12 +42,12 @@ export default {
     return {
       cards: [
         { title: 'Mathematics',
-          desc: 'I am interested in various field of Mathematics, such as Statistics, Computational Statistics, Probability, Real Analysis, Functional Analysis, Manifold, Numerical Analysis, Stochastic Differential Equation, Control theory, and Stochastic Control.',
+          desc: 'I am interested in various fields of Mathematics, such as Statistics, Computational Statistics, Probability, Real Analysis, Functional Analysis, Manifold, Numerical Analysis, Stochastic Differential Equation, Control theory, and Stochastic Control.',
           image: 'mathematics.png'
         },
         {
           title: 'Programming',
-          desc: 'I like doing programming and making a cool stuff with it. Personally I like to use programming on some mathematical projects such as numerical analysis, machine learning, simulation.',
+          desc: 'I like programming and making a cool stuff with it. Personally I like to use programming on some mathematical projects such as numerical analysis, machine learning, simulation.',
           image: 'programming.jpg'
         },
         { title: 'RayTracing',
