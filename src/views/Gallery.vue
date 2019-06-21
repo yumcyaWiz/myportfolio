@@ -3,12 +3,13 @@
     <v-flex v-for="item in items" :key="item.title" xs3>
       <v-hover>
         <v-card tile slot-scope="{hover}">
-          <v-img :src="require('@/assets/gallery/' + item.image)" aspect-ratio=1.0>
-            <div class="fill-height" :class="hover ? 'bottom-gradient' : 'none'">
-              <v-card-title v-if="hover" class="white--text headline font-weight-light">{{item.title}}</v-card-title>
-              <v-card-text v-if="hover" class="white--text caption font-weight-light">{{item.desc}}</v-card-text>
-            </div>
-          </v-img>
+            <v-img :src="require('@/assets/gallery/' + item.image)" aspect-ratio=1.0>
+              <div class="fill-height" :class="hover ? 'bottom-gradient' : 'none'">
+                <v-card-title v-if="hover" class="white--text headline font-weight-light">{{item.title}}</v-card-title>
+                <v-card-text v-if="hover" class="white--text caption font-weight-light">{{item.desc}}</v-card-text>
+                <v-card-actions v-if="item.link && hover"><v-btn :href="item.link" small flat class="white--text font-weight-light">Link</v-btn></v-card-actions>
+              </div>
+            </v-img>
         </v-card>
       </v-hover>
     </v-flex>
@@ -21,8 +22,8 @@ export default {
   data() {
     return {
       items: [
-        { title: 'Photorealism', image: '1.png', desc: 'Published on C95'},
-        { title: 'Signed Distance Field', image: 'signed_distance_field.png', desc: 'Published on C92' },
+        { title: 'Photorealism', image: '1.png', desc: 'Published on C95', link:'https://yumcyawiz.booth.pm/items/1159865'},
+        { title: 'Signed Distance Field', image: 'signed_distance_field.png', desc: 'Published on C92', link:'https://yumcyawiz.booth.pm/items/1159850' },
         { title: 'Earth Rendering', image: '2.png', desc: 'Volume Rendering' },
         { title: 'Atmosphere Rendering', image: '3.png', desc: 'Volume Rendering' },
         { title: 'Cornell Box', image: '4.png', desc: 'BVH + Next Event Estimation'},
