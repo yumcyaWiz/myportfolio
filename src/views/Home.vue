@@ -2,7 +2,7 @@
   <div>
     <v-layout>
       <v-flex>
-        <v-parallax :src="require('../assets/parallax.png')">
+        <v-parallax :src="require('../assets/parallax.png')" height=400>
           <v-layout align-center column justify-center>
             <h1 class="display-3 font-weight-thin mb-3">Mathematics × Programming</h1>
             <h4 class="subheading font-weight-light">good balance of theory and implementation</h4>
@@ -14,7 +14,7 @@
     <v-container fluid>
       <v-card flat>
         <v-card-title>
-          <h2 class="diaplay-3 font-weight-light">I am interested in ...</h2>
+          <h2 class="display-1 font-weight-thin">I am interested in ...</h2>
         </v-card-title>
 
         <v-container xs12>
