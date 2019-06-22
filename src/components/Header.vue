@@ -14,11 +14,9 @@
 
     <v-menu class="hidden-md-and-up" dark>
       <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
-      <v-list>
-        <v-list-tile v-for="view in views" :key="view.title">
-          <v-list-tile-content>
-            <v-list-tile-title>{{view.title}}</v-list-tile-title>
-          </v-list-tile-content>
+      <v-list dense>
+        <v-list-tile v-for="view in views" :key="view.title" :to="view.external ? '' : view.path" :href="view.external ? view.path : ''">
+          {{view.title}}
         </v-list-tile>
       </v-list>
     </v-menu>
