@@ -1,6 +1,6 @@
 <template>
   <v-layout row wrap>
-    <v-flex v-for="item in items" :key="item.title" xs3>
+    <v-flex v-for="item in items" :key="item.title" xs12 sm6 md3>
       <v-hover>
         <v-card tile slot-scope="{hover}">
             <v-img :src="require('@/assets/gallery/' + item.image)" aspect-ratio=1.0>
