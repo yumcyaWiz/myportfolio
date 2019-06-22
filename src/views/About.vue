@@ -1,12 +1,14 @@
 <template>
   <v-container fluid>
     <v-layout align-center justify-center column>
-      <v-avatar size=100><v-img :src="require('../assets/avatar.jpg')" /></v-avatar>
-      <h3 class="display-3 font-weight-light mb-3">yumcyawiz</h3>
-      <p>Hi, I am yumcyawiz.</p>
-      <p>I am an undergraduate student at a university in Japan, where I major in Applied Mathematics.</p>
-      <p>I like to use mathematics and programming in projects.</p>
-      <p>If you want to contact me, you can use DM on twitter or send me an e-mail to <code>hashdolf1923@gmail.com</code></p>
+      <v-flex>
+        <v-avatar size=100><v-img :src="require('../assets/avatar.jpg')" /></v-avatar>
+        <h3 class="display-3 font-weight-light mb-3">yumcyawiz</h3>
+        <p>Hi, I am yumcyawiz.</p>
+        <p>I am an undergraduate student at a university in Japan, where I major in Applied Mathematics.</p>
+        <p>I like to use mathematics and programming in projects.</p>
+        <p>If you want to contact me, you can use DM on twitter or send me an e-mail to <code>hashdolf1923@gmail.com</code></p>
+      </v-flex>
 
       <v-timeline class="ma-3">
         <v-timeline-item v-for="timeline in timelines" :key="timeline.time" color="red lighten-3">
