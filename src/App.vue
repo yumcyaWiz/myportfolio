@@ -37,7 +37,7 @@ export default {
         { title: 'Blog', icon: '', path: 'https://teastat.blogspot.com/', external: true },
         { title: 'Twitter', icon: '', path: 'https://twitter.com/yumcyawiz', external: true },
         { title: 'Github', icon: '', path: 'https://github.com/yumcyaWiz', external: true },
-        { title: 'Pixiv BOOTH', icon: '', path: 'https://yumcyawiz.booth.pm/', external: true }
+        { title: 'BOOTH', icon: '', path: 'https://yumcyawiz.booth.pm/', external: true }
       ],
     }
   }
