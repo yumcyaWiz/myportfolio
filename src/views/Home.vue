@@ -50,8 +50,8 @@ export default {
           desc: 'I like programming and making a cool stuff with it. Personally I like to use programming on some mathematical projects such as numerical analysis, machine learning, simulation.',
           image: 'programming.jpg'
         },
-        { title: 'RayTracing',
-          desc: 'RayTracing is a method to generate photorealistic CGs. I am especially interested in Montecarlo RayTracing algorithms such as Path Tracing, Bidirectional Path Tracing, Metropolis Light Transport.',
+        { title: 'Ray Tracing',
+          desc: 'Ray Tracing is a method to generate photorealistic CGs. I am especially interested in Montecarlo RayTracing algorithms such as Path Tracing, Bidirectional Path Tracing, Metropolis Light Transport.',
           image: 'raytracing.png'
         },
         {
