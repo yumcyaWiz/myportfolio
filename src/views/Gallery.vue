@@ -7,7 +7,10 @@
               <div class="fill-height" :class="hover ? 'bottom-gradient' : 'none'">
                 <v-card-title v-if="hover" class="white--text headline font-weight-light">{{item.title}}</v-card-title>
                 <v-card-text v-if="hover" class="white--text caption font-weight-light">{{item.desc}}</v-card-text>
-                <v-card-actions v-if="item.link && hover"><v-btn :href="item.link" small flat class="white--text font-weight-light">Link</v-btn></v-card-actions>
+                <v-card-actions v-if="item.link && hover">
+                  <v-btn v-if="isExternal(item.link)" :href="item.link" small flat class="white--text font-weight-light">Link</v-btn>
+                  <v-btn v-else :to="item.link" small flat class="white--text font-weight-light">Link</v-btn>
+                </v-card-actions>
               </div>
             </v-img>
         </v-card>
@@ -31,7 +34,14 @@ export default {
         { title: 'Diamond', image: '7.png', desc: 'Specular + Image Based Lighting'},
         { title: 'Stanford Dragon', image: '8.png', desc: 'BVH + Next Event Estimation'},
         { title: 'Glass Balls', image: '9.png', desc: 'Specular + Image Based Lighting'},
+        { title: 'Mandelbrot', image: 'mandelbrot.png', desc: 'GLSL Distance Estimation', link:'/gallery/mandelbrot' },
       ]
+    }
+  },
+
+  methods: {
+    isExternal(link) {
+      return link.includes('http') || link.includes('https')
     }
   }
 }
