@@ -23,6 +23,11 @@ export default new Router({
       path: '/gallery',
       name: 'gallery',
       component: () => import(/* webpackChunkName: "about" */ './views/Gallery.vue')
+    },
+    {
+      path: '/gallery/mandelbrot',
+      name: 'mandelbrot',
+      component: () => import(/* webpackChunkName: "about" */ './views/gallery/Mandelbrot.vue')
     }
   ]
 })
