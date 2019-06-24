@@ -89,7 +89,7 @@ export default {
         float mandelbrot(vec2 c) {
           vec2 z = vec2(0.0, 0.0);
           vec2 zd = vec2(0.0, 0.0);
-          for(int i = 0; i < 100; i++) {
+          for(int i = 0; i < 150; i++) {
             if(length(z) > 2.0) break;
             zd = 2.0*cmult(z, zd) + vec2(1.0, 0.0);
             z = cmult(z, z) + c;
