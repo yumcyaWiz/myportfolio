@@ -1,20 +1,20 @@
 <template>
+  <v-layout align-center>
   <v-container>
-    <v-layout align-center justify-center column>
-      <v-flex>
-        <v-card>
-          <v-card-title>
-            <h3 class="headline font-weight-light">Mandelbrot</h3>
-          </v-card-title>
+    <v-card flat>
+      <v-card-title>
+        <h3 class="headline font-weight-light">Mandelbrot</h3>
+      </v-card-title>
 
-          <v-card-text>
+        <v-card-text>
+          <v-layout align-center column>
             <v-slider label="scale" v-model.number="time" min="0" max="20" step="0.1" />
             <canvas id="canvas" :width="width" :height="height" />
-          </v-card-text>
-        </v-card>
-      </v-flex>
-    </v-layout>
+          </v-layout>
+        </v-card-text>
+    </v-card>
   </v-container>
+  </v-layout>
 </template>
 
 
