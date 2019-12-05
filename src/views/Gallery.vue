@@ -25,6 +25,7 @@ export default {
   data() {
     return {
       items: [
+        { title: 'Mathematics Behind RayTracing', image: 'mathematics_behind_raytracing.png', desc: 'Published on C96'},
         { title: 'Photorealism', image: '1.png', desc: 'Published on C95', link:'https://yumcyawiz.booth.pm/items/1159865'},
         { title: 'Signed Distance Field', image: 'signed_distance_field.png', desc: 'Published on C92', link:'https://yumcyawiz.booth.pm/items/1159850' },
         { title: 'Earth Rendering', image: '2.png', desc: 'Volume Rendering' },
