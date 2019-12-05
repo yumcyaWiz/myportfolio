@@ -38,6 +38,7 @@ export default {
         { time: '2018/09', title: 'Fund Intern', desc: 'I started to intern on a quantitative hedge fund. I researched making a smart beta of NIKKEI225 stocks.'},
         { time: '2018/12', title: 'Joined C95', desc: 'I published a book called Photorealism. It is about the theory and implementation of Path Tracing.' },
         { time: '2019/01', title: 'Renderer Job', desc: 'I started working on a company as a graphics-programmer.' },
+        { time: '2019/09', title: 'Passed Entrance Exam of Graduate School', desc: 'I successfully passed an entrance exam of graduate school. I will major in stochastic differential equation and stochastic control, and an application of them in finance at graduate school.' }
       ]
     }
   }
